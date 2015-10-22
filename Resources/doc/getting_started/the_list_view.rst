@@ -124,7 +124,7 @@ for it!
 
 It does this by allowing you to configure datagrid filters in the
 ``Admin#configureDatagridFilters()`` method. For instance, to allow the admin
-to search blog posts by title (and also order them by alfabet in the list), you
+to search blog posts by title (and also order them by alphabet in the list), you
 would do something like:
 
 .. code-block:: php
