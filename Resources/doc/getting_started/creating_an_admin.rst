@@ -49,7 +49,7 @@ After this, you'll need to tweak the entities a bit:
 .. code-block:: php
 
     // src/AppBundle/Entity/Category.php
-
+    use Doctrine\Common\Collections\ArrayCollection;
     // ...
     use Doctrine\Common\Collections\ArrayCollection;
     // ...
