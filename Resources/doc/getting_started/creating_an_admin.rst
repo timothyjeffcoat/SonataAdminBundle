@@ -15,7 +15,7 @@ using these commands:
 .. code-block:: bash
 
     $ php app/console doctrine:generate:entity --entity="AppBundle:Category" --fields="name:string(255)" --no-interaction
-    $ php app/console doctrine:generate:entity --entity="AppBundle:BlogPost" --fields="title:string(255) body:textdraft:boolean" --no-interaction
+    $ php app/console doctrine:generate:entity --entity="AppBundle:BlogPost" --fields="title:string(255) body:text:boolean" --no-interaction
 
 After this, you'll need to tweak the entities a bit:
 
@@ -30,7 +30,7 @@ After this, you'll need to tweak the entities a bit:
 
         /**
          * @ORM\ManyToOne(targetEntity="Category", inversedBy="blogPosts")
-         */
+         */body:text:boolean
         private $category;
 
         public function setCategory(Category $category)
